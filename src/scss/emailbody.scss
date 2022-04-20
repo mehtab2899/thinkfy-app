@@ -1,0 +1,84 @@
+.emailbody {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+
+  &__current--email {
+    border: 1.5px solid #e54065 !important;
+  }
+
+  &__list {
+    width: 30% !important;
+    overflow-y: scroll;
+    max-height: 100vh;
+
+    &--data {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: start;
+      border: 1px solid #cfd2dc;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      background: #fff;
+
+      &--avatar {
+        display: grid;
+        place-items: center;
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        border-radius: 50%;
+        background: #e54065;
+        margin-right: 2rem;
+        font-size: 2rem;
+      }
+
+      &--details {
+        p {
+          margin: 0.5rem;
+        }
+
+        p > span {
+          font-size: 1.2rem;
+          color: gray;
+        }
+      }
+    }
+  }
+
+  &__body {
+    max-height: 100vh;
+    width: 65%;
+    background: #fff;
+    border: 1px solid #cfd2dc;
+    padding: 3rem;
+    border-radius: 0.5rem;
+
+    font-size: 1.2rem;
+    color: #4c4c4d;
+
+    &--header {
+      margin-bottom: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .headings {
+        display: flex;
+        justify-content: center;
+      }
+
+      button {
+        background: #e54065;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: none;
+        color: #fff;
+      }
+    }
+
+    &--text {
+      margin: 0 0 0 5rem;
+    }
+  }
+}
